@@ -15,6 +15,10 @@
 //     return view('welcome');
 // });
 
+Route::get('/', function(){
+    return 'Hello Haamz.s';
+});
+
 Route::get('/donation', 'DonationController@index')->name('welcome');
 Route::post('/finish', function () {
     return redirect()->route('welcome');
